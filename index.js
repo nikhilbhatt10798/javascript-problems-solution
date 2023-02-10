@@ -55,7 +55,17 @@ function getDaysBetweenDates(start, end, dayName) {
 //               new Date('Thu Feb 09 2023 00:00:00 GMT+0530 (India Standard Time)'),
 //               new Date('Sat Feb 18 2023 00:00:00 GMT+0530 (India Standard Time)'),
 //               'Fri');
+const res ={};
 
-const res = getDaysBetweenDates(fieldsData.fromDate,fieldsData.toDate,'Mon');
-
+fieldsData.selectedWeekDays.filter((day) => {
+  if (day.value === true)
+    weekday = day.label;
+     res[weekday]=( getDaysBetweenDates(
+        new Date(fieldsData.fromDate),
+        new Date(fieldsData.toDate),
+        day.label
+      ));
+});
+// const res = getDaysBetweenDates(new Date(fieldsData.fromDate), new Date(fieldsData.toDate), 'Fri');
 console.log(res);
+// console.log(res,fieldsData.fromDate,fieldsData.toDate);
