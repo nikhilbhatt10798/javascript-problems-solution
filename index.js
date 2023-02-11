@@ -104,3 +104,92 @@ current.setDate(current.getDate() + ((day - current.getDay() + 7) % 7));
 
 =================================================
 */
+// // ======================= 11 -02 -2023 
+// // let selectedDayDates = {};
+// // let weekDayArr = [];
+// // let weekday;
+
+// // fieldsData.selectedWeekDays.filter((day) => {
+// //   if (day.value === true) {
+// //     weekday = day.label;
+// //     weekDayArr.push(weekday);
+// //     selectedDayDates[weekday] = getDaysBetweenDates(
+// //       new Date(fieldsData.fromDate),
+// //       new Date(fieldsData.toDate),
+// //       day.label
+// //     );
+// //   }
+// // });
+// // // const res = getDaysBetweenDates(new Date(fieldsData.fromDate), new Date(fieldsData.toDate), 'Fri');
+
+// // console.log('weekday', weekday);
+// // console.log('selectedDayDates', selectedDayDates);
+
+
+// // ==============================================================================
+
+
+// let selectedDayDates = [
+//    [
+//     '2023-02-13T18:30:00.000Z',
+//     '2023-02-20T18:30:00.000Z',
+//     '2023-02-27T18:30:00.000Z',
+//     '2023-03-06T18:30:00.000Z',
+//     '2023-03-13T18:30:00.000Z'
+//   ],
+//  [
+//     '2023-02-16T18:30:00.000Z',
+//     '2023-02-23T18:30:00.000Z',
+//     '2023-03-02T18:30:00.000Z',
+//     '2023-03-09T18:30:00.000Z',
+//     '2023-03-16T18:30:00.000Z'
+//   ],
+//    [
+//     '2023-02-11T18:30:00.000Z',
+//     '2023-02-18T18:30:00.000Z',
+//     '2023-02-25T18:30:00.000Z',
+//     '2023-03-04T18:30:00.000Z',
+//     '2023-03-11T18:30:00.000Z'
+//   ]
+// ]
+
+// for (const i in selectedDayDates) {
+//   for (const j in selectedDayDates[i]) {
+//     let dateFrom = selectedDayDates[i][j].split('T')[0];
+//     console.log({
+//       listingId: 57657,
+//       dateFrom: dateFrom,
+//       dateTo: addDays(new Date(selectedDayDates[i][j]), 1),
+//       price: 56,
+//       extraPrice: 0,
+//     });
+//   }
+// }
+
+// function addDays(theDate, days) {
+//   let nextdate = new Date(theDate.getTime() + days * 24 * 60 * 60 * 1000);
+//   return nextdate;
+// }
+
+// //   // let date = '2023-02-13T18:30:00.000Z';
+// //   // create a date variable 
+// var date = new Date("2023-02-13T18:30:00.000Z");
+// var nextDay = addDays(date,1 );
+// console.log(nextDay);
+
+
+// selectedDayDates.forEach((dates) => {
+//   dates.forEach((date) => {
+//       console.log(date);
+//   });
+// });
+
+// // ===========================
+//     // function addDays(theDate, days): string {
+//     //   let nextdate = new Date(theDate.getTime() + days * 24 * 60 * 60 * 1000);
+//     //   // console.log(nextdate);
+//     //   let day = nextdate.getDate();
+//     //   let month = nextdate.getMonth();
+//     //   let year = nextdate.getFullYear();
+//     //   return `${year}-${month}-${day}`;
+//     // }
