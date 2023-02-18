@@ -1,12 +1,11 @@
 const presets = [
   {
-    _id: new ObjectId("63f0c656eee9750311ddff96"),
     name: 'all listing and permissions',
     permissions: {
       create: [Object],
       update: [Object],
       delete: [Object],
-      view: [Object]
+      view: [Object],
     },
     listings: [
       '628bc24766d8367462a9c095',
@@ -109,20 +108,18 @@ const presets = [
       '63d1627619e032fdd2c68bc5',
       '63d1628219e032fdd2c68c5d',
       '63d1628719e032fdd2c68caa',
-      ... 110 more items
     ],
     createdAt: '2023-02-18T12:36:38.628Z',
-    updatedAt:' 2023-02-18T12:36:38.628Z',
-    __v: 0
+    updatedAt: ' 2023-02-18T12:36:38.628Z',
+    __v: 0,
   },
   {
-    _id: new ObjectId("63f0d443eee9750311de0267"),
     name: 'preset',
     permissions: {
       create: [Object],
       update: [Object],
       delete: [Object],
-      view: [Object]
+      view: [Object],
     },
     listings: [
       '628bc24766d8367462a9c095',
@@ -225,20 +222,18 @@ const presets = [
       '63d1627619e032fdd2c68bc5',
       '63d1628219e032fdd2c68c5d',
       '63d1628719e032fdd2c68caa',
-      ... 110 more items
     ],
     createdAt: '2023-02-18T13:36:03.289Z',
     updatedAt: '2023-02-18T13:36:03.289Z',
-    __v: 0
+    __v: 0,
   },
   {
-    _id: new ObjectId("63f0d829eee9750311de02df"),
     name: 'user ',
     permissions: {
       create: [Object],
       update: [Object],
       delete: [Object],
-      view: [Object]
+      view: [Object],
     },
     listings: [
       '628bc24766d8367462a9c095',
@@ -341,10 +336,9 @@ const presets = [
       '63d1627619e032fdd2c68bc5',
       '63d1628219e032fdd2c68c5d',
       '63d1628719e032fdd2c68caa',
-      ... 110 more items
     ],
     createdAt: '2023-02-18T13:52:41.209Z',
-    updatedAt:' 2023-02-18T13:52:41.209Z',
-    __v: 0
-  }
+    updatedAt: ' 2023-02-18T13:52:41.209Z',
+    __v: 0,
+  },
 ];
