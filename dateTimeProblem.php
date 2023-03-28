@@ -19,7 +19,7 @@
         $timeLimit = "09:00 AM";
         //  $timeLimit = "09:00 PM";
         if($startDate == $currentDate ){
-            if( strtotime($startTime)> strtotime($timeLimit)){
+            if( strtotime($startTime)>= strtotime($timeLimit)){
                 return true;
             }else{
                 return false;
@@ -46,6 +46,6 @@
             }
         }
     }
-    $isValide = is_valid_datetime('2023-03-24 08:39:00 ','2023-03-24 14:01:00');
+    $isValide = is_valid_datetime('2023-03-28 21:39:00 ','2023-03-29 10:01:00');
     var_dump( $isValide );
 ?>
